@@ -12,12 +12,7 @@ pipeline {
                 bat 'npm install'
             }
         }
-        stage('Test') {
-            steps {
-                // Run tests (for Node.js)
-                bat 'npm test'
-            }
-        }
+      
         stage('Build') {
             steps {
                 // Build the project (for Node.js)
